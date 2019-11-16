@@ -1,0 +1,37 @@
+.location {
+    margin-top: 25px;
+    transition: 250ms;
+    opacity: 0;
+    transform: translateY(100%);
+    color: #fff;
+    font-weight: 300;
+
+    &.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    & .geoposition {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 5px;
+
+        &__city {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        &__country {
+            margin-left: 20px;
+            font-size: 40px;
+            font-weight: 100;
+        }
+    }
+
+    & .date {
+
+        &__time {
+            margin-right: 30px;
+        }
+    }
+}

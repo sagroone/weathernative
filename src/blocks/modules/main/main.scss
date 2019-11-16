@@ -1,0 +1,14 @@
+.main-content {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../../img/first-launch.png') no-repeat 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        transition: 250ms;
+        background: url('../../../img/active.png') no-repeat 50% 50%;
+    }
+}

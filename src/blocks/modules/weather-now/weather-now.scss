@@ -1,0 +1,85 @@
+.weather-now {
+    margin-top: 45px;
+    display: flex;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(200%);
+    transition: 250ms;
+
+    & svg path {
+        stroke: #fff;
+    }
+
+    & .whole-day {
+        display: flex;
+        font-size: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+
+        &__min {
+            margin-right: 15px;
+            display: flex;
+        }
+
+        &__max {
+            display: flex;
+        }
+    }
+
+    &__ico {
+        display: flex;
+        align-items: center;
+        width: 110px;
+        margin-right: 20px;
+
+        & object {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        width: 100%;
+    }
+
+    & .current-deg {
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 700;
+
+        &__num {
+            margin-right: 15px;
+        }
+
+        &__units {
+            cursor: pointer;
+            opacity: .3;
+            position: relative;
+            margin-left: 10px;
+
+            &.active {
+                opacity: 1;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: -20px;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+        }
+    }
+
+    & .weather-conditions {
+        font-weight: 300;
+    }
+
+    &.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
